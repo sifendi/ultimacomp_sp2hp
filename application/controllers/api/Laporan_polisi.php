@@ -5,6 +5,7 @@ require APPPATH . '/libraries/REST_Controller.php';
 
 class Laporan_polisi extends REST_Controller{
     public function index_get(){
+		
 		$no_hp = $this->post('no_hp');
     	if ($no_hp == null || $no_hp == "") {
     		$data = $this->db->get('m_anggota')->result();
