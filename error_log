@@ -1,0 +1,7 @@
+[05-Oct-2018 17:54:10 Asia/Jakarta] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'afec7839_sp2hp'@'localhost' (using password: YES) in /home/resr5454/public_html/sp2hp/api.php on line 7
+[05-Oct-2018 17:54:10 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/resr5454/public_html/sp2hp/api.php on line 10
+[09-Jan-2019 05:50:35 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::array() in /home/resr5454/public_html/sp2hp/application/models/M_laporan.php on line 58
+[23-Jan-2020 08:58:01 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_user::delete() in /home/resr5454/public_html/sp2hp/application/controllers/User.php on line 80
+[23-Jan-2020 08:58:05 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_user::delete() in /home/resr5454/public_html/sp2hp/application/controllers/User.php on line 80
+[23-Jan-2020 08:58:10 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_user::delete() in /home/resr5454/public_html/sp2hp/application/controllers/User.php on line 80
+[23-Jan-2020 08:58:20 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_user::delete() in /home/resr5454/public_html/sp2hp/application/controllers/User.php on line 80
