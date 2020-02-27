@@ -2,14 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class AUTH_Controller extends CI_Controller {
+
 	public function __construct() {
+
 		parent::__construct();
 		$this->load->model('M_admin');
-
 		$this->userdata = $this->session->userdata('userdata');
-		
 		$this->session->set_flashdata('segment', explode('/', $this->uri->uri_string()));
-
+		// var_dump($this->session->userdata);
+		// var_dump($this->session->userdata('segment'));
+		// exit;
 		if ($this->session->userdata('status') == '') {
 			redirect('Auth');
 		}

@@ -18,27 +18,6 @@ class M_auth extends CI_Model {
         }
     }
 
-    public function login2($user, $pass) {
-        $query = $this->db->query("SELECT * FROM admin
-            WHERE username  = '$user'
-            and   password  = '$pass'");
-        if ($query->num_rows() == 1) {
-            foreach ($query->result_array() as $row) {
-                $session_data = array(
-                    'user_on' => true,
-                    'username' => $user,
-                    'id_level' => $row['id_level'],
-                    'nama' => $row['nama'],
-                    'foto' => $row['foto'],
-                    'status' => "Loged in"
-                );
-                $this->session->set_userdata($session_data);
-                return $query;
-            }
-        } else {
-            return false;
-        }
-    }
 
 }
 
