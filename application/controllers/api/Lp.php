@@ -1,11 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 require APPPATH . '/libraries/REST_Controller.php';
-
-class Anggota extends REST_Controller{
-
+class LP extends REST_Controller{
 	public function index_get(){
-		$data = $this->db->get('m_anggota')->result();
+		$data = $this->db->get('tb_lp')->result();
     	$bantu = apistandart('Success','false',$data);
 		$this->output
 			->set_content_type('application/json')
@@ -13,10 +11,10 @@ class Anggota extends REST_Controller{
     }
 
     public function index_post(){
-		$no = $this->post('no');
-		if($no != null && is_numeric($no)){
-			$this->db->where('no', $no);
-			$data = $this->db->get('m_anggota')->result();
+		$nomor_hp = $this->post('nomor_hp');
+		if($nomor_hp != null && is_numeric($nomor_hp)){
+			$this->db->where('nomor_hp', $nomor_hp);
+			$data = $this->db->get('tb_lp')->result();
 			$bantu = apistandart('Success Call Data By ID','false',$data);
 			$this->output
 				->set_content_type('application/json')
